@@ -1,0 +1,8 @@
+
+User-agent: *
+Allow: /
+Sitemap: https://joachimsonigo.github.io/sitemap.xml
+
+# Block access to common sensitive locations (no private files should be here)
+Disallow: /admin/
+Disallow: /private/
