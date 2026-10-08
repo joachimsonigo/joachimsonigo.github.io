@@ -21,7 +21,7 @@
 		
 		// Remove "loading" class once the page has fully loaded.
 			window.onload = function() {
-				document.body.className = '';
+				document.body.className = document.body.className.replace(/\bloading\b/g, '').replace(/^\s+|\s+$/g, '');
 			}
 
 		// Prevent scrolling on touch.
