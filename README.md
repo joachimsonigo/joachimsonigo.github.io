@@ -19,7 +19,10 @@ Key files
  - `resume.html` — resume page; upload `assets/Joachim_Sonigo_Resume.pdf` for the download link
  - `sitemap.xml` — search engine sitemap (update when new pages added)
  - `robots.txt` — crawler rules
- - `images/og-card.svg` — OpenGraph preview image used for link previews
+ - `images/og-card.png` — link-preview image (1200×630); `favicon.ico` and `images/*icon*.png` — site icons shown in search results
+
+Credits
+ - Background artwork and base styles adapted from "Aerial" by [HTML5 UP](https://html5up.net) (CCA 3.0). Attribution is kept here and in the page source rather than in a visible footer.
 
 Search & analytics
  - Add the site to Google Search Console and submit `https://joachimsonigo.github.io/sitemap.xml`.
