@@ -15,8 +15,10 @@ then open `http://localhost:8000/`.
 
 Key files
  - `index.html` — homepage
- - `projects.html` and `projects/` — projects index and per-project pages
- - `resume.html` — resume page; upload `assets/Joachim_Sonigo_Resume.pdf` for the download link
+ - `experience.html` — work history, skills and education (`resume.html` redirects here for old links)
+ - `projects.html` and `projects/` — projects index and one page per project (Overview · My work · Approach · Outcome)
+ - `contact.html` — contact details
+ - Yellow `[Add: …]` markers (`class="todo"`) are placeholders: fill them in or remove them before publishing. Find them with `grep -rn 'class="todo"' *.html projects/`
  - `sitemap.xml` — search engine sitemap (update when new pages added)
  - `robots.txt` — crawler rules
  - `images/og-card.png` — link-preview image (1200×630); `favicon.ico` and `images/*icon*.png` — site icons shown in search results

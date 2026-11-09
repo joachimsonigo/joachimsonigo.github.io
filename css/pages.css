@@ -306,92 +306,6 @@ body.page {
 	border-color: #fff;
 }
 
-.page.home-page #main {
-	max-width: 1020px;
-}
-
-.home-page #header {
-	animation: none;
-	display: block;
-	margin: 1rem auto 3rem;
-	opacity: 1;
-	position: relative;
-	text-align: center;
-	top: auto;
-	width: 100%;
-}
-
-.home-page #header h1 {
-	font-size: clamp(2.8rem, 7vw, 4.6rem);
-	font-weight: 900;
-	letter-spacing: -0.04em;
-	line-height: 1.05;
-	margin: 0;
-}
-
-.home-page #header > p {
-	font-size: 1.15rem;
-	margin: 0.8rem auto 0;
-	max-width: 680px;
-	opacity: 0.82;
-}
-
-.home-page #header nav li {
-	animation: none;
-	opacity: 1;
-}
-
-.home-page #content > section {
-	background: rgba(8, 28, 48, 0.48);
-	border: 1px solid rgba(255, 255, 255, 0.19);
-	border-radius: 8px;
-	box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
-	margin: 1rem auto;
-	max-width: 900px;
-	padding: 1.35rem 1.6rem;
-	scroll-margin-top: 5rem;
-}
-
-.home-page #content > section h2 {
-	font-size: 1.45rem;
-	font-weight: 900;
-	margin: 0 0 0.65rem;
-}
-
-.home-page #content > section p {
-	margin: 0.5rem 0;
-}
-
-.home-page #content > section ul {
-	margin: 0;
-	padding-left: 1.25rem;
-}
-
-.home-page #content > section ul.alt {
-	list-style: none;
-	padding: 0;
-}
-
-.home-page #content > section ul.alt li {
-	border-top: 1px solid rgba(255, 255, 255, 0.16);
-	padding: 0.8rem 0;
-}
-
-.home-page #content > section ul.alt li:first-child {
-	border-top: 0;
-	padding-top: 0;
-}
-
-.home-page #content > section ul.alt li:last-child {
-	padding-bottom: 0;
-}
-
-.home-page #content > section ul.alt p {
-	font-size: 0.92rem;
-	margin: 0.25rem 0 0;
-	opacity: 0.83;
-}
-
 .page .button-link.primary {
 	background: #fff;
 	border-color: #fff;
@@ -401,19 +315,6 @@ body.page {
 .page .button-link.primary:hover {
 	background: #d8f4ff;
 	color: #163b59;
-}
-
-.home-page .hero-actions {
-	margin-top: 1.4rem;
-}
-
-.home-page .hero-actions .button-link {
-	margin: 0.4rem 0.3rem 0;
-}
-
-.home-page #content > section .section-link {
-	font-weight: 900;
-	margin-top: 0.9rem;
 }
 
 @media (max-width: 640px) {
@@ -454,23 +355,274 @@ body.page {
 		padding: 1rem;
 	}
 
-	.home-page #content > section {
-		padding: 1rem;
-	}
-
-	.home-page #header {
-		margin: 1rem auto 2rem;
-	}
-
-	.home-page #header nav li {
-		font-size: 0.7em;
-	}
 }
 
 @media (min-width: 641px) and (max-width: 900px) {
 	.page .card-grid,
 	.page .detail-grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+/* ---------- Placeholders (fill in before publishing) ---------- */
+
+.page .todo {
+	background: rgba(255, 214, 102, 0.16);
+	border: 1px dashed #ffd666;
+	border-radius: 3px;
+	color: #ffe7a3;
+	padding: 0 0.3em;
+}
+
+/* ---------- Home: intro ---------- */
+
+.page .intro {
+	margin: 4.5rem auto 2rem;
+	max-width: 900px;
+}
+
+.page .intro h1 {
+	font-size: clamp(2rem, 4.6vw, 3.2rem);
+	font-weight: 900;
+	letter-spacing: -0.03em;
+	line-height: 1.12;
+	margin: 0 0 1.4rem;
+	max-width: 820px;
+}
+
+.page .intro .socials {
+	display: flex;
+	gap: 0.5rem;
+	list-style: none;
+	margin: 1.2rem 0 0;
+	padding: 0;
+}
+
+.page .intro .socials a {
+	align-items: center;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 999px;
+	display: inline-flex;
+	height: 2.6rem;
+	justify-content: center;
+	transition: background-color 0.2s ease;
+	width: 2.6rem;
+}
+
+.page .intro .socials a:hover {
+	background: rgba(255, 255, 255, 0.14);
+}
+
+.page .intro .socials .label {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+
+.page .facts {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	margin: 0 auto 3rem;
+	max-width: 900px;
+	padding: 1.1rem 0;
+}
+
+.page .facts div {
+	margin: 0;
+}
+
+.page .facts dt,
+.page .project-facts dt {
+	font-size: 0.7rem;
+	font-weight: 900;
+	letter-spacing: 0.16em;
+	opacity: 0.7;
+	text-transform: uppercase;
+}
+
+.page .facts dd,
+.page .project-facts dd {
+	font-size: 0.95rem;
+	line-height: 1.45;
+	margin: 0.25rem 0 0;
+}
+
+/* ---------- Section headings with "View all" ---------- */
+
+.page .section-heading.with-link {
+	align-items: flex-end;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+
+.page .section-heading .count {
+	font-size: 0.9rem;
+	font-weight: 300;
+	opacity: 0.6;
+}
+
+.page .view-all {
+	border: 0;
+	font-size: 0.9rem;
+	font-weight: 900;
+	white-space: nowrap;
+}
+
+.page .project-card .card-top {
+	display: flex;
+	font-size: 0.7rem;
+	font-weight: 900;
+	justify-content: space-between;
+	letter-spacing: 0.16em;
+	margin-bottom: 0.7rem;
+	opacity: 0.75;
+	text-transform: uppercase;
+}
+
+.page .card-grid.two {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* ---------- Skills ---------- */
+
+.page .skill-group h3 {
+	font-size: 1rem;
+}
+
+.page .skill-group .tag-list {
+	margin-bottom: 0;
+}
+
+/* ---------- Project detail ---------- */
+
+.page .back-link {
+	border: 0;
+	display: inline-block;
+	font-size: 0.88rem;
+	font-weight: 900;
+	margin-top: 2.5rem;
+	opacity: 0.8;
+}
+
+.page .project-hero {
+	margin: 1.5rem auto 2rem;
+	max-width: 900px;
+}
+
+.page .project-hero h1 {
+	font-size: clamp(2.2rem, 5vw, 3.6rem);
+	font-weight: 900;
+	letter-spacing: -0.04em;
+	line-height: 1.08;
+	margin: 0 0 0.9rem;
+}
+
+.page .project-hero .lede {
+	font-size: 1.12rem;
+	margin: 0 0 1rem;
+	max-width: 720px;
+	opacity: 0.85;
+}
+
+.page .project-facts {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	margin: 0 auto 2.5rem;
+	max-width: 900px;
+	padding: 1.1rem 0;
+}
+
+.page .project-facts div {
+	margin: 0;
+}
+
+.page .prose {
+	background: rgba(8, 28, 48, 0.62);
+	border: 1px solid rgba(255, 255, 255, 0.19);
+	border-radius: 8px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 900px;
+	padding: 0.4rem 1.6rem 1.4rem;
+}
+
+.page .prose section:first-child {
+	border-top: 0;
+}
+
+.page .prose section {
+	border-top: 1px solid rgba(255, 255, 255, 0.16);
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: 200px minmax(0, 1fr);
+	padding: 1.6rem 0;
+}
+
+.page .prose h2 {
+	font-size: 1.15rem;
+	font-weight: 900;
+	margin: 0;
+}
+
+.page .prose p {
+	margin: 0 0 0.8rem;
+}
+
+.page .prose ul {
+	margin: 0;
+	padding-left: 1.2rem;
+}
+
+.page .prose li {
+	margin-bottom: 0.4rem;
+}
+
+.page .project-nav {
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	margin: 2rem auto 0;
+	max-width: 900px;
+	padding-top: 1.2rem;
+}
+
+.page .project-nav a {
+	border: 0;
+	font-weight: 900;
+}
+
+@media (max-width: 640px) {
+	.page .intro {
+		margin-top: 2.5rem;
+	}
+
+	.page .facts,
+	.page .card-grid.two {
+		grid-template-columns: 1fr;
+	}
+
+	.page .project-facts {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.page .prose {
+		padding: 0.2rem 1rem 1rem;
+	}
+
+	.page .prose section {
+		gap: 0.6rem;
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -481,4 +633,18 @@ body.page {
 		scroll-behavior: auto !important;
 		transition-duration: 0.01ms !important;
 	}
+}
+
+.page .label-hidden {
+	clip: rect(0 0 0 0);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+
+.page .surface h2 {
+	font-size: 1.2rem;
+	font-weight: 900;
+	margin: 0 0 0.5rem;
 }
